@@ -28,4 +28,5 @@ function highlight(letters,occurence,tagType){
         i = 0;
     }
 };
-highlight("shazia",1,p);
+highlight("shazia",1,"p"); // Paragraphs
+highlight("shazia",1,"yt-formatted-string"); // Youtube comments
