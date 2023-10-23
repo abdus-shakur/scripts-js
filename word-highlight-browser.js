@@ -21,7 +21,7 @@ function highlight(letters, occurence, tagType) {
             });
             console.log(output);
             tags[k].innerHTML = output;
-            if (++occurencesCounter > occurence) {
+            if (++occurencesCounter >= occurence) {
                 break tagLoop;
             }
         }
