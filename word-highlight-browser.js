@@ -21,13 +21,14 @@ function highlight(letters, occurence, tagType) {
             });
             console.log(output);
             tags[k].innerHTML = output;
-            if (++occurencesCounter >= occurence) {
+            if (occurence != 0 && ++occurencesCounter >= occurence) {
                 break tagLoop;
             }
         }
         i = 0;
     }
 };
+highlight("shamutha", 0, "p");// 0 - for all matching strings
 highlight("abcd", 1, "p");
 highlight("shazia", 1, "p"); // Paragraphs
 highlight("shazia", 1, "yt-formatted-string"); // Youtube comments
