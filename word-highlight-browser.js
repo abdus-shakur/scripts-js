@@ -13,7 +13,7 @@ function highlight(letters, occurence, tagType) {
         if (p.match(regex)) {
             p.split('').forEach(letter => {
                 if (letter == letters[i]) {
-                    output += "<em style=\"color: red; font-size:24px;\">" + letter.toUpperCase() + "</em>";
+                    output += `<em style=\"color: red; font-size:24px;\">${letter.toUpperCase()}</em>`;
                     i++;
                 } else {
                     output += letter;
@@ -28,5 +28,6 @@ function highlight(letters, occurence, tagType) {
         i = 0;
     }
 };
+highlight("abcd", 1, "p");
 highlight("shazia", 1, "p"); // Paragraphs
 highlight("shazia", 1, "yt-formatted-string"); // Youtube comments
