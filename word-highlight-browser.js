@@ -1,5 +1,5 @@
-function highlight(letters,occurence){
-    var tags = $x("//p");
+function highlight(letters,occurence,tagType){
+    var tags = $x("//"+tagType);
     var i = 0;
     var regex = "";
     var occurencesCounter = 0;
@@ -28,4 +28,4 @@ function highlight(letters,occurence){
         i = 0;
     }
 };
-highlight("shazia",1);
+highlight("shazia",1,p);
